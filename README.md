@@ -11,8 +11,8 @@ An end-to-end full-stack Machine Learning application featuring a custom **HTML5
 🔗 **Live Application**: [(https://creditriskassessmentusingshapandcaliberati-production.up.railway.app/)]
 
 ---
-🛠️ Project Structure
-## 📁 Repository Structure
+ Project Structure
+##  Repository Structure
 
 ```text
 Credit_Risk_Assessment_using_SHAP_and_Caliberation/
@@ -28,17 +28,17 @@ Credit_Risk_Assessment_using_SHAP_and_Caliberation/
 ├── requirements.txt                # Python dependencies
 └── README.md                       # Project documentation
 
-## 🌟 Key Engineering &amp; Architecture Highlights
+##  Key Engineering &amp; Architecture Highlights
 
-* 💻 **Custom Full-Stack Architecture**: Built a lightweight, custom HTML/CSS/JS client communicating with an asynchronous FastAPI backend via `fetch()` API calls, eliminating heavy framework wrappers.
-* ⚙️ **Leakage-Free Preprocessing Pipeline**: Integrated `StandardScaler`, `SimpleImputer`, and `OneHotEncoder(handle_unknown='ignore')` inside a unified `Scikit-Learn` `ColumnTransformer` pipeline.
-* 🎯 **Probability Calibration**: Applied `CalibratedClassifierCV` (Sigmoid/Platt Scaling) to align raw model probabilities with empirical financial risk likelihoods.
-* 🔍 **Explainable AI (SHAP)**: Generated feature attributions using `SHAP` (`TreeExplainer`) to break down individual applicant risk factors into positive and negative contributions.
-* 📈 **Optimal Threshold Tuning**: Tuned the classification boundary to **0.7724** to optimize the F1-score on imbalanced credit default data.
+*  **Custom Full-Stack Architecture**: Built a lightweight, custom HTML/CSS/JS client communicating with an asynchronous FastAPI backend via `fetch()` API calls, eliminating heavy framework wrappers.
+*  **Leakage-Free Preprocessing Pipeline**: Integrated `StandardScaler`, `SimpleImputer`, and `OneHotEncoder(handle_unknown='ignore')` inside a unified `Scikit-Learn` `ColumnTransformer` pipeline.
+*  **Probability Calibration**: Applied `CalibratedClassifierCV` (Sigmoid/Platt Scaling) to align raw model probabilities with empirical financial risk likelihoods.
+*  **Explainable AI (SHAP)**: Generated feature attributions using `SHAP` (`TreeExplainer`) to break down individual applicant risk factors into positive and negative contributions.
+*  **Optimal Threshold Tuning**: Tuned the classification boundary to **0.7724** to optimize the F1-score on imbalanced credit default data.
 
 ---
 
-## 📊 Model Performance Benchmarks
+##  Model Performance Benchmarks
 
 Evaluated using 5-Fold Stratified Cross-Validation on financial loan records:
 
@@ -51,7 +51,7 @@ Evaluated using 5-Fold Stratified Cross-Validation on financial loan records:
 
 ---
 
-## 🏗️ System Flow Diagram
+##  System Flow Diagram
 
 ```text
 [ Applicant UI Input ]
